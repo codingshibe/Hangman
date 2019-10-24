@@ -54,4 +54,5 @@ function hangman_game(){
   }
 }
 
+// Launch game
 hangman_game();
