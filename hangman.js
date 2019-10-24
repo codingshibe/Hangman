@@ -34,7 +34,11 @@ function hangman_game(){
       else {
         for(var j = 0; j < word.length; j++){
           // If the guess is in the word
+ hangman_v2
           if(word[j] === guess){
+
+          
+ master
             // Update the player's progress with the guess
             answerArray[j] = guess;
             remainingLetters--;
