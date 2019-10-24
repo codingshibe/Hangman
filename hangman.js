@@ -1,16 +1,5 @@
 var name = prompt("What is your name? ");
-console.log("Hello " + name);
-
-// // The value of a confirm method is returned as a boolean
-// var likesCats = confirm("Do you like cats? ");
-// // OK === true
-// if (likesCats){
-//   console.log("You are one cool cat ");
-// }
-// // Cancel === false
-// else {
-//   console.log("Yeah, that's fine. You're still cool ");
-// }
+alert("Hello " + name);
 
 function hangman_game(){
   // An array of words for our game
@@ -28,6 +17,7 @@ function hangman_game(){
 
   while (remainingLetters > 0){
       // Show the player their current progress
+
       alert(answerArray.join(" "));
       // Get a guess from the player
       var guess = prompt("Guess a letter, or click Cancel to stop playing.");
@@ -42,12 +32,17 @@ function hangman_game(){
         alert("Please enter a single letter.");
       }
       else {
-        for(var i = 0; i < word.length; i++){
+        for(var j = 0; j < word.length; j++){
           // If the guess is in the word
-          if(word[i] === guess && answerArray[i] === '_'){
+ hangman_v2
+          if(word[j] === guess){
+
+          
+ master
             // Update the player's progress with the guess
-            answerArray[i] = guess;
+            answerArray[j] = guess;
             remainingLetters--;
+
           }
         }
       }
